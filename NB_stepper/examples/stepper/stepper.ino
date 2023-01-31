@@ -1,5 +1,5 @@
 //Copyright 2012 Igor Campos
-//			2015 Gerrit jan Baarda
+// 2015 Gerrit jan Baarda
 //
 //  Simplified version of CustomStepper
 //This file is part of NB_stepper.
@@ -29,14 +29,13 @@
 //the 10th parameter will remove the motor power when the motor is at rest. 
 //The optional parameters can be queried and set by get/set methods at a later stage.
 
-NB_stepper stepper(6, 7, 8, 9,  HALFSTEP, 96, 12, CW, 0, true);
+NB_stepper stepper(6, 7, 8, 9, HALFSTEP, 96, 12, CW, 0, true);
 boolean rotate1 = false;
 boolean rotatedeg = false;
 boolean crotate = false;
 
 void setup()
 {
-// set the speed of the motor to 300 RPMs
   Serial.begin(115200);
   while (!Serial)
     {
@@ -44,8 +43,9 @@ void setup()
     }
   //sets the RPM
   stepper.setRPM(120);
-  //sets the Steps Per Rotation, in this case it is 64 * the 283712/4455 annoying ger ratio
-  //for my motor (it works with float to be able to deal with these non-integer gear ratios)
+  // Set the number of steps per full turn of the motor
+  // In case of half steps, the number will be twice the number of physical
+  // steps.
   stepper.setSPR(96);
 }
 
