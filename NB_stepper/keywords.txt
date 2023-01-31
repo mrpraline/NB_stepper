@@ -1,0 +1,45 @@
+#######################################
+# Syntax Coloring Map For NB_stepper
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+NB_stepper	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+setRPM	KEYWORD2
+getRPM	KEYWORD2
+setSPR	KEYWORD2
+getSPR	KEYWORD2
+setDirection	KEYWORD2
+getDirection	KEYWORD2
+setMode KEYWORD2
+getMode KEYWORD2
+setPattern KEYWORD2
+getPattern KEYWORD2
+run	KEYWORD2
+isDone	KEYWORD2
+setRefPos	KEYWORD2
+getPos	KEYWORD2
+gotoPos	KEYWORD2
+setReleaseOnDone	KEYWORD2
+getReleaseOnDone	KEYWORD2
+setPattern	KEYWORD2
+getPattern	KEYWORD2
+getTotalSteps	KEYWORD2
+setTotalSteps	KEYWORD2
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+CONTINUOUS	LITERAL1
+ROTATIONS	LITERAL1
+STEPS	LITERAL1
+STOP	LITERAL1
+FULLSTEP LITERAL1
+HALFSTEP LITERAL1
