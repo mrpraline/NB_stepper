@@ -23,7 +23,8 @@
 
 #include "NB_stepper.h"
 
-NB_stepper::NB_stepper(byte pin1, byte pin2, byte pin3, byte pin4, byte stepmode, unsigned int spr, unsigned int rpm, long intialpos, bool releaseOnDone, unsigned long totals = 0)
+NB_stepper::NB_stepper(byte pin1, byte pin2, byte pin3, byte pin4, byte stepmode, unsigned int spr, 
+                       unsigned int rpm, long intialpos, bool releaseOnDone, unsigned long totals)
 {
   this->setMode(stepmode);
   this->setSPR(spr);
